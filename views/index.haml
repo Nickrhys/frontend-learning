@@ -4,16 +4,22 @@
     %title Front End Learning
     %link{rel: 'stylesheet', href: '/stylesheets/style.css'}
   %body
-    %header
-      %nav
-        .avatar
-          %span NR
-        %ul#dropdown
-          %li Your courses
-          %li Create
-          %li Your profile
-          %li Settings
-          %li Sign out
+    %header.navigation-container
+      %nav.navigation-menu
+        %a.navigation-menu__avatar{href: "#user-avatar"}
+          %span.navigation-menu__user-name
+            NR
+        %ul.navigation-menu--dropdown
+          %li.navigation-menu__menu-item
+            %a.link{href: "#your-courses"} Your courses
+          %li.navigation-menu__menu-item-section
+            %a.link{href: "#create"} Create
+          %li.navigation-menu__menu-item-section
+            %a.link{href: "#your-profile"} Your profile
+          %li.navigation-menu__menu-item
+            %a.link{href: "#settings"} Settings
+          %li.navigation-menu__menu-item
+            %a.link{href: "#sign-out"} Sign out
 
 %script{src: 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'}
 %script{type: "text/javascript", src: "/javascripts/script.js"}
